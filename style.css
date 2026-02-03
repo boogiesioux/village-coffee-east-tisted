@@ -1,0 +1,181 @@
+/* Global */
+body {
+  background: #fdf8ee;
+  margin: 0;
+  font-family: "Patrick Hand", cursive;
+  color: #4b2e19;
+}
+
+/* Scrapbook background */
+.scrapbook-section {
+  width: 100%;
+  padding: 4rem 1rem;
+  background: #f8f3e7;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Title */
+.scrapbook-title {
+  font-size: 2.4rem;
+  color: #c46a2d;
+  margin-bottom: 2rem;
+}
+
+/* Collage container */
+.scrapbook-collage {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Polaroid frame */
+.polaroid {
+  background: #fffdf8;
+  padding: 0.5rem 0.5rem 1.2rem;
+  border: 1px solid rgba(75, 46, 25, 0.25);
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hover lift */
+.polaroid:hover {
+  z-index: 5;
+  transform: scale(1.03) rotate(0deg);
+  transition: 0.2s ease;
+}
+
+.polaroid img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Caption */
+.caption {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #c46a2d;
+}
+
+/* Sizes */
+.polaroid-large { width: 55%; }
+.polaroid-medium { width: 40%; }
+.polaroid-small { width: 28%; }
+
+/* Rotations */
+.rotate-left { transform: rotate(-3deg); }
+.rotate-right { transform: rotate(3deg); }
+.rotate-left-strong { transform: rotate(-6deg); }
+.rotate-right-strong { transform: rotate(6deg); }
+
+/* Row of small Polaroids */
+.polaroid-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Paw print */
+.pawprint {
+  font-size: 1.4rem;
+  color: #4b2e19;
+  position: absolute;
+  bottom: -1.2rem;
+  left: 0.5rem;
+  transform: rotate(-8deg);
+}
+
+/* Woof */
+.woof {
+  position: absolute;
+  bottom: -1.8rem;
+  left: 2.5rem;
+  font-size: 1rem;
+  color: #c46a2d;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fffdf8;
+  border: 1px solid rgba(75,46,25,0.2);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  line-height: 1.6;
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #c46a2d;
+}
+
+.about-section p {
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+
+/* Signature */
+.signature {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  text-align: right;
+  color: #4b2e19;
+}
+
+/* SOCIAL SECTION */
+.info-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #fdf8ee;
+}
+
+.info-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #c46a2d;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  font-size: 1.2rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid rgba(75,46,25,0.25);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: #4b2e19;
+}
+
+.social-icon:hover {
+  background: #f3e9d8;
+}
+
+.directions {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+a {
+  color: #b5651d; /* warm brown */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e67e22; /* soft orange on hover */
+}
