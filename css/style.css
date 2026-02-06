@@ -1,3 +1,4 @@
+
 /* Global */
 body {
   background: #fdf8ee;
@@ -33,39 +34,25 @@ body {
 /* Polaroid frame */
 .polaroid {
   background: #fffdf8;
-  padding: 0.5rem 0.5rem 1.2rem;
-  border: 1px solid rgba(75, 46, 25, 0.25);
-  border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  display: inline-block;
-  margin: 1rem;
+  padding: 0.3rem 0.3rem 0.8rem;   /* smaller frame + caption strip */
+  border: 1px solid rgba(75, 46, 25, 0.2);
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   position: relative;
   z-index: 1;
 }
 
-/* Hover lift */
-.polaroid:hover {
-  z-index: 5;
-  transform: scale(1.03) rotate(0deg);
-  transition: 0.2s ease;
-}
-
 .polaroid img {
-  width: 100%;
-  border-radius: 4px;
+  width: 200px;
+  height: auto;
 }
 
 /* Caption */
 .caption {
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
   font-size: 1rem;
   color: #c46a2d;
 }
-
-/* Sizes */
-.polaroid-large { width: 55%; }
-.polaroid-medium { width: 40%; }
-.polaroid-small { width: 28%; }
 
 /* Rotations */
 .rotate-left { transform: rotate(-3deg); }
@@ -73,12 +60,17 @@ body {
 .rotate-left-strong { transform: rotate(-6deg); }
 .rotate-right-strong { transform: rotate(6deg); }
 
-/* Row of small Polaroids */
+/* Row of Polaroids – all 5 in one row */
 .polaroid-row {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;   /* keep them on one line on larger screens */
+}
+
+/* Dog polaroid anchor */
+.dog-polaroid {
+  position: relative;
 }
 
 /* Paw print */
@@ -86,16 +78,16 @@ body {
   font-size: 1.4rem;
   color: #4b2e19;
   position: absolute;
-  bottom: -1.2rem;
-  left: 0.5rem;
+  bottom: -0.6rem;
+  left: 0.2rem;
   transform: rotate(-8deg);
 }
 
 /* Woof */
 .woof {
   position: absolute;
-  bottom: -1.8rem;
-  left: 2.5rem;
+  bottom: -1.2rem;
+  left: 1.4rem;
   font-size: 1rem;
   color: #c46a2d;
 }
@@ -104,19 +96,19 @@ body {
 .about-section {
   max-width: 800px;
   margin: 3rem auto;
-  padding: 2rem;
-  background: #fffdf8;
-  border: 1px solid rgba(75,46,25,0.2);
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 0 1rem;
   line-height: 1.6;
+  text-align: justify;
+  background: none;
+  border: none;
+  box-shadow: none;
 }
 
 .about-section h2 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
-  text-align: center;
   color: #c46a2d;
+  text-align: center;
 }
 
 .about-section p {
@@ -126,8 +118,8 @@ body {
 
 /* Signature */
 .signature {
-  margin-top: 2rem;
-  font-size: 1.3rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
   text-align: right;
   color: #4b2e19;
 }
@@ -170,7 +162,10 @@ body {
 .directions {
   font-size: 1.2rem;
   opacity: 0.9;
+  text-align: center;   /* centre the directions text */
 }
+
+/* Links */
 a {
   color: #b5651d; /* warm brown */
   text-decoration: none;
