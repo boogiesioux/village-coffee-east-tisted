@@ -10,7 +10,7 @@ body {
 /* Scrapbook background */
 .scrapbook-section {
   width: 100%;
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
   background: #f1f4d5;
   text-align: center;
   position: relative;
@@ -95,7 +95,7 @@ body {
 /* ABOUT SECTION */
 .about-section {
   max-width: 800px;
-  margin: 3rem auto;
+  margin: 1.5rem auto;
   padding: 0 1rem;
   line-height: 1.6;
   text-align: justify;
@@ -106,19 +106,19 @@ body {
 
 .about-section h2 {
   font-size: 2.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   color: #c46a2d;
   text-align: center;
 }
 
 .about-section p {
-  margin-bottom: 1.2rem;
+  margin-bottom: .5rem;
   font-size: 1.2rem;
 }
 
 /* Signature */
 .signature {
-  margin-top: 1rem;
+  margin-top: .5rem;
   font-size: 1.2rem;
   text-align: right;
   color: #4b2e19;
@@ -127,13 +127,13 @@ body {
 /* SOCIAL SECTION */
 .info-section {
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 1.5rem 1rem;
   background: #fif4d5;
 }
 
 .info-section h3 {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   color: #c46a2d;
 }
 
@@ -141,7 +141,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
 .social-icon {
